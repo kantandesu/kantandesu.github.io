@@ -27,7 +27,7 @@ export default function IntroSection() {
 
   const heroSrc = currentTheme === 'dark' ? osagewebDark : osagewebLight
   return (
-    <section className="w-full">
+    <section className="w-full min-h-screen flex items-start pt-15 sm:pt-40">
       <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 md:items-center md:gap-12">
           {/* Hero image with dynamic ratio */}
@@ -35,13 +35,13 @@ export default function IntroSection() {
             <img
               src={heroSrc}
               alt="Portfolio hero"
-              className="w-[90%] h-auto object-contain outline outline-0 outline-[#3c3836]"
+              className="w-[100%] h-auto object-contain outline-[#3c3836]"
             />
           </div>
 
           {/* Text content */}
-          <div className="flex flex-col gap-4">
-            <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-[var(--text)]">
+          <div className="flex flex-col gap-5">
+            <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight text-[var(--text)]">
               {"hi, i'm "}
               <RotatingText
                 texts={["ayaan", "আয়ান", "عیان"]}
@@ -60,7 +60,7 @@ export default function IntroSection() {
                 rotationInterval={2000}
               />
             </h1>
-            <p className="text-base sm:text-lg leading-relaxed text-[var(--muted)]">
+            <p className="text-xl sm:text-[22px] leading-relaxed text-[var(--muted)]">
               frontend developer and student. keep scrolling to know more about me and my projects.
             </p>
           </div>

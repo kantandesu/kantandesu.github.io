@@ -38,7 +38,8 @@ export default function AyaanLogo() {
       src={src}
       alt="Ayaan logo"
       onClick={handleToggle}
-      width={125}
+      className="relative top-6 sm:top-12"
+      width={160}
     />
   )
 }
