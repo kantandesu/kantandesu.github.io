@@ -1,16 +1,266 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayaan — Developer / Designer / Problem Solver</title>
+  <meta name="description" content="Portfolio of Ayaan, a software developer focused on building clean, practical and human-centered digital experiences.">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23E84E29'/></svg>">
+</head>
+<body>
+  <div class="site-wrapper">
+    <!-- Header / Navbar -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="#home" class="logo">ayaan<span class="accent-dot">.</span></a>
+        
+        <!-- Mobile menu toggle button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <nav class="site-nav" id="siteNav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link active">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="home">
+        <div class="container hero-container">
+          <!-- Hero Left Column: Intro & Headline -->
+          <div class="hero-content">
+            <!--<p class="eyebrow">DEVELOPER / DESIGNER / PROBLEM SOLVER</p> -->
+            <h1 class="hero-headline">
+              building<br>
+              with<br>
+              purpose<span class="accent-dot">.</span>
+            </h1>
+            <p class="hero-bio">
+              Development focused on building clean, practical and human-centered digital experiences.
+            </p>
+            <div class="hero-actions">
+              <a href="#about" class="btn btn-secondary">about me</a>
+              <a href="#projects" class="btn btn-primary">view projects <img src="assets/arrow-down.svg" alt="" aria-hidden="true" class="btn-arrow"></a>
+            </div>
+          </div>
+
+          <!-- Hero Right Column: Illustration -->
+          <div class="hero-illustration-wrapper">
+            <div class="illustration-container">
+              <img 
+                src="assets/msct_test_crop.png" 
+                alt="Illustration of Ayaan sitting on the stairs in manga screentone style"
+                class="hero-illustration-img"
+                loading="eager"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="section-divider">
+            <div class="divider-line"></div>
+            <h2 class="section-title">about</h2>
+          </div>
+
+          <div class="about-content">
+            <div class="about-intro">
+              
+              <h2 class="about-title">ideate, create and iterate<span class="accent-dot">.</span></h2>
+              <img src="assets/architect_fx.png" alt="Architectural illustration" class="about-architect-image">
+            </div>
+            <div class="about-body">
+              <p>
+                I'm a software developer whose experience spans web and mobile development, interactive mapping, geospatial data engineering, 3D graphics and the systems that connect them.
+              </p>
+              <p>
+                I'm intereseted in working across the stack, from structuring and transforming data to developing the applications and visual experiences built on top of it. I'm particularly looking for work where I can build meaningful products that offer a solution that isn't presently available in the market.
+              </p>
+              <div class="about-details-grid">
+                <div class="detail-block">
+                  <h4>CORE COMPETENCIES</h4>
+                  <p>Data Engineering, Frontend Development, Geospatial Data Analysis, 3D Graphics</p>
+                </div>
+                <div class="detail-block">
+                  <h4>TECH STACK</h4>
+                  <p>Python, JavaScript/TypeScript, React, React Native, Node.js, Next.js, Three.js, Maplibre, SQLite</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section Divider -->
+      <div class="container">
+        <div class="section-divider">
+          <h2 class="section-title">projects</h2>
+          <div class="divider-line"></div>
+        </div>
+      </div>
+
+      <!-- Featured Projects Section -->
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <div class="projects-grid">
+            <!-- Project Card 1: Ghuri -->
+            <article class="project-card">
+              <div class="project-graphic-wrapper">
+                <img src="assets/ghuri_p.png" alt="Ghuri Geometric Graphic" class="project-graphic">
+              </div>
+              <div class="project-header">
+                <h3 class="project-name">ghuri</h3>
+                <a href="https://ghuri.app" class="project-arrow" aria-label="View Ghuri details"><img src="assets/arrow_diagnol.svg" alt="" aria-hidden="true"></a>
+              </div>
+              <p class="project-description">
+                Durga Puja pandal-hopping itinerary planner for Calcutta.
+              </p>
+              <div class="project-tags">
+                <span>Web Development</span> &middot; <span>3d Graphics</span> &middot; <span>MAPS</span>
+              </div>
+            </article>
+
+            <!-- Project Card 2: DISHASTRA -->
+            <article class="project-card">
+              <div class="project-graphic-wrapper">
+                <img src="assets/dishastra_p.png" alt="Dishastra Geometric Graphic" class="project-graphic">
+              </div>
+              <div class="project-header">
+                <h3 class="project-name">DISHASTRA</h3>
+                <a href="https://dishastra.in" class="project-arrow" aria-label="View Dishastra details"><img src="assets/arrow_diagnol.svg" alt="" aria-hidden="true"></a>
+              </div>
+              <p class="project-description">
+                AI-powered travel itinerary planner, with customized recommendations.
+              </p>
+              <div class="project-tags">
+                <span>Web Development</span> &middot; <span>Maps</span>&middot; <span>Data Engineering</span>
+              </div>
+            </article>
+
+            <!-- Project Card 3: Calwatch -->
+            <article class="project-card">
+              <div class="project-graphic-wrapper">
+                <img src="assets/calwatch_p.png" alt="Calwatch project graphic" class="project-graphic">
+              </div>
+              <div class="project-header">
+                <h3 class="project-name">Calwatch</h3>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-032-25446-7_11" class="project-arrow" aria-label="View Calwatch details"><img src="assets/arrow_diagnol.svg" alt="" aria-hidden="true"></a>
+              </div>
+              <p class="project-description">
+                AI & Blockchain integrated calorie and nutrition tracking app.
+              </p>
+              <div class="project-tags">
+                <span>Blockchain</span> &middot; <span>Mobile Development</span>
+              </div>
+            </article>
+
+            <!-- Project Card 4: Memoir -->
+            <article class="project-card">
+              <div class="project-graphic-wrapper">
+                <img src="assets/memoir_p.png" alt="Memoir Geometric Dot Grid Graphic" class="project-graphic">
+              </div>
+              <div class="project-header">
+                <h3 class="project-name">Memoir</h3>
+                <a href="https://github.com/basilisk-in/Memoir" class="project-arrow" aria-label="View Memoir details"><img src="assets/arrow_diagnol.svg" alt="" aria-hidden="true"></a>
+              </div>
+              <p class="project-description">
+                AI-powered note management platform.
+              </p>
+              <div class="project-tags">
+                <span>Web Development</span> &middot; <span>UI/UX</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact & Contact Section -->
+      <section class="impact-section" id="contact">
+        <div class="container impact-container">
+          <!-- Left Column: Ideas to impact -->
+          <div class="impact-left">
+            <h2 class="impact-headline">
+              want<br>
+              to<br>
+              connect<span class="accent-dot">?</span>
+            </h2>
+          </div>
+
+          <!-- Middle Column: Message & CTA -->
+          <div class="impact-middle">
+            <p class="impact-text">
+              I'm currently open to new opportunities and collaborations. If you're working on something interesting, let's talk.
+            </p>
+            <a href="mailto:ayaang.ray@gmail.com" class="btn btn-outline" id="contactBtn">get in touch <img src="assets/arrow-up-right.svg" alt="" aria-hidden="true" class="btn-arrow"></a>
+          </div>
+
+          <!-- Right Column: Social Links & Location Badge -->
+          <div class="impact-right">
+            <div class="social-links-col">
+              <a href="https://github.com/kantandesu" target="_blank" rel="noopener noreferrer" class="social-link">
+                <img src="assets/github.svg" alt="" class="social-icon">
+                <span>github</span>
+              </a>
+              <a href="https://linkedin.com/in/ayaanray/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <img src="assets/linkedin.svg" alt="" class="social-icon">
+                <span>linkedin</span>
+              </a>
+              <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="social-link">
+                <img src="assets/resume.svg" alt="" class="social-icon">
+                <span>resume</span>
+              </a>
+              <a href="mailto:ayaang.ray@gmail.com" class="social-link">
+                <img src="assets/mail.svg" alt="" class="social-icon">
+                <span>email</span>
+              </a>
+            </div>
+            
+            <div class="vertical-divider"></div>
+
+            <div class="location-col">
+              <span class="location-label">based in</span>
+              <div class="location-graphic">
+                <img src="assets/kolkata_fx.png" alt="Overlapping red and black circles" class="venn-graphic">
+              </div>
+              <span class="location-label">Calcutta, INDIA</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <span class="footer-title">AYAAN RAY<span class="accent-dot">.</span></a></span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,2 +1,0 @@
-# kantandesu.github.io
-t
