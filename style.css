@@ -906,6 +906,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     overflow: hidden;
+    padding-top: 4px;
   }
 
   .footer-title {
